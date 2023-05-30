@@ -18,7 +18,9 @@ pipeline{
     }
     post{
    always{
-       step( archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false)
+       steps{ 
+       archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
+       }
        }       
     }
                 }
