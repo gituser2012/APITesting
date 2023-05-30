@@ -6,10 +6,11 @@ pipeline{
                      git branch: 'main', url: 'https://github.com/gituser2012/APITesting'
                           }
                 }
-            env.PATH = "C:\\Windows\\System32;C:\\apache-maven-3.9.2-bin\\apache-maven-3.9.2\\bin"
+            
     
     stage('build'){ 
               steps{
+                        env.PATH = "C:\\Windows\\System32;C:\\apache-maven-3.9.2-bin\\apache-maven-3.9.2\\bin"
             bat 'mvn package'
               }
     }
