@@ -9,7 +9,7 @@ pipeline{
                stage('env'){ 
               steps{
                         env.PATH = "C:\\Windows\\System32;C:\\apache-maven-3.9.2-bin\\apache-maven-3.9.2\\bin"
-           
+              }     
               }
     
     stage('build'){ 
